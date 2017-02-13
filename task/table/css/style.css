@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "YouandiModernTR";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Youandi_Modern_TextRegular.eot");
+  src: url("../fonts/Youandi_Modern_TextRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Youandi_Modern_TextRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YouandiModernTD";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Youandi_Modern_TextBold.eot");
+  src: url("../fonts/Youandi_Modern_TextBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Youandi_Modern_TextBold.woff") format("woff");
+}
+
+body {
+  font-size: 16px;
+  font-family: "YouandiModernTR";
+  margin: 0;
+}
+
+#content {
+  width: 1032px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#tblDesc {
+  position: absolute;
+  top: 0;
+  left: -9999em;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+li::before {
+  content: '- ';
+}
+
+table {
+  display: table;
+  border-collapse: collapse;
+  width: 1032px;
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #eee;
+  margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #183ae8;
+}
+
+th {
+  text-align: left;
+  width: 100px;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  font-family: "YouandiModernTD";
+}
+
+td {
+  padding: 30px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.border-ignore {
+  border: 0;
+}
