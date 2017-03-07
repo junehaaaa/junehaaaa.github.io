@@ -1,0 +1,64 @@
+@import mixin
+
+header
+  background: url(../asset/main-img.png) center top
+  background-size: cover
+  padding-left: 11.5%
+  padding-right: 11.5%  
+  
+.header__navigation
+  position: relative
+
+.header-logo
+  position: absolute
+  top: 27px
+
+.header__gnb
+  +media-tablet
+    position: absolute
+    top: 31px
+    right: -10px
+    z-index: 1
+
+  +media-desktop
+    position: absolute
+    top: 31px
+    right: -10px
+    z-index: 1
+
+.header__gnb-list
+  +media-mobile
+    display: none
+
+  +media-tablet
+    display: inline-block
+    font-size: 1.5em
+    margin-left: 30px
+
+  +media-desktop
+    display: inline-block
+    font-size: 1.5em
+    margin-left: 30px
+
+.header__gnb-list > a 
+  padding: 10px
+  color: #fff
+  &:hover
+    color: #18FFFF
+
+.header__burger-menu
+  +media-mobile
+    position: absolute
+    top: 27px
+    right: 0
+  
+  +media-tablet
+    display: none
+
+.header__burger-bar
+  +media-mobile
+    display: block
+    width: 31px
+    height: 2px
+    background: #fff
+    margin-top: 5px

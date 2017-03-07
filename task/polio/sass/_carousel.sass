@@ -1,0 +1,70 @@
+@import mixin
+
+.carousel
+  position: relative
+
+h2
+  +media-mobile
+    font-weight: 400
+    font-size: 8.25vw
+    color: #fff
+    padding-top: 35%
+    padding-bottom: 28%
+    width: 100%
+
+  +media-tablet
+    font-weight: 400
+    font-size: 7.25vh
+    color: #fff
+    padding-top: 20%
+    padding-bottom: 28%
+    width: 100%
+
+  +media-desktop
+    font-weight: 400
+    font-size: 7.25vh
+    color: #fff
+    padding-top: 20%
+    padding-bottom: 28%
+    width: 100%
+      
+.header__h2-arrow
+  +media-tablet
+    display: none
+
+.content__list
+  +media-mobile
+    display: none
+
+  +media-tablet
+    display: flex
+    justify-content: center
+    width: 100%
+    margin: 0 auto
+    position: absolute
+    top: 80%
+
+  +media-desktop
+    display: flex
+    justify-content: center
+    width: 100%
+    margin: 0 auto
+    position: absolute
+    top: 80%
+
+.content__list-item
+  display: block
+  width: 33.333333%
+  border-top: 2px solid #fff
+  &:hover
+    color: #18FFFF
+    border-top: 2px solid #18FFFF
+    
+.content__list-item-title
+  font-size: 1.8em
+  margin-top: 10%
+  margin-bottom: 5%
+
+
+.content__list-item-subtitle
+  font-size: 1.3em
