@@ -1,0 +1,323 @@
+@charset "UTF-8";
+
+.header, .intro, .features, .price, .table, .blog, .footer, .copyright {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 나누는 선 */
+.horizon-split {
+  height: 1px;
+  background: #ababab;
+  margin: 100px 0;
+}
+
+.footer-horizon-split {
+  height: 1px;
+  background: #ababab;
+  margin-top: 100px;
+}
+
+.copyright-horizon-split {
+  height: 1px;
+  background: #ababab;
+  margin-bottom: 30px;
+}
+
+/* 메뉴 */
+
+.navigation {
+  margin-top: 70px;
+  position: relative;
+  height: 100px;
+}
+
+.navigation h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: '700';
+}
+
+.navigation .lang-select {
+  position: absolute;
+  top: 0.5em;
+  right: 3em;
+}
+
+.navigation .navigator {
+  position: absolute;
+  top: 0.2em;
+  right: 0;
+}
+
+.navigator .navigator-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #474747;
+  margin-top: 4px;
+}
+
+/* intro */
+
+.intro {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.intro img {
+  margin-bottom: 30px;
+}
+
+/* features */
+
+.features {
+  text-align: center;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.features-subject {
+  letter-spacing: 0.2em;
+}
+
+/* price */
+
+.price {
+  text-align: center;
+}
+
+.price img {
+  margin-top: 50px;
+}
+
+/* testmonials */
+
+.testmonials {
+
+}
+
+.testmonials-heading, .testmonials > p {
+  text-align: center;
+}
+
+.testmonials-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.testmonials-list {
+  position: relative;
+}
+
+.testmonials-list span {
+  background: url(../images/quotes.png) no-repeat;
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+}
+
+.testmonials-list p {
+  margin: -20px 0 0 40px;
+}
+
+.text-box {
+  background: #03a67b;
+  width: 460px;
+  height: 135px;
+  border-radius: 10px 10px;
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -30px;
+}
+
+.select-text {
+  color: #fff;
+}
+
+.user img, .user-info {
+  display: inline-block;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-name {
+  color: #000;
+}
+
+.user-name, .user-job {
+  margin-top: 0;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.user {
+  width: 300px;
+  margin: 50px auto;
+}
+
+/* table */
+
+.table-heading, .table p {
+  text-align: center;
+}
+
+.table p {
+  margin: 0;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.table-list {
+  background: #fff;
+  border: 1px solid #eee;
+  width: 380px;
+  padding: 30px 30px;
+}
+
+.price-plan {
+  letter-spacing: 0.2em;
+  color: #000;
+}
+
+
+.table-list .price-dollor {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #03a67b;
+  position: relative;
+  margin-top: 10px;
+}
+
+.price-dollor span {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 10px;
+  left: 38%;
+}
+
+.price-desc {
+  padding-top: 20px;
+}
+
+.spec {
+  margin-top: 50px;
+}
+
+.spec li {
+  margin-top: 10px;
+  color: #ababab;
+}
+
+.spec span {
+  float: right;
+}
+
+.btn-price {
+  width: 318px;
+  background: #fff;
+  color: #03a67b;
+  border-radius: 5px 5px;
+  border: 1px solid #03a67b;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.btn-price:hover, .btn-blog:hover {
+  color: #fff;
+  background: #03a67b;
+}
+
+/* blog */
+
+.blog {
+  height: 400px;
+}
+
+.blog-heading {
+  text-align: center;
+}
+
+.blog-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+.blog-content time {
+  margin-top: 30px;
+  letter-spacing: 0.3em;
+  color: #ababab;
+}
+
+.btn-blog {
+  width: 318px;
+  background: #fff;
+  color: #03a67b;
+  border-radius: 5px 5px;
+  border: 1px solid #03a67b;
+  cursor: pointer;
+  margin: 20px 35% 0 35%;
+}
+
+/* footer */
+
+.footer {
+  height: 200px;
+  padding-top: 100px;
+}
+
+.footer-menu, .footer-menu li {
+  display: inline-block;
+}
+
+.footer-menu a {
+  padding: 20px 10px;
+}
+
+.store-link {
+  float: right;
+}
+
+.app-store {
+  display: inline-block;
+  background: url(../images/apple.png) no-repeat;
+  width: 130px;
+  height: 40px;
+  text-indent: -999em;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.play-store {
+  display: inline-block;
+  background: url(../images/google.png) no-repeat;
+  width: 130px;
+  height: 40px;
+  text-indent: -999em;
+  margin-left: 20px;
+}
+
+.copyright {
+  display: block;
+  color: #ababab;
+  margin-bottom: 30px;
+}

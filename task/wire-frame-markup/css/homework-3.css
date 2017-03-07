@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/* 기본스타일 */
+
+.wrapper {
+  height: 100vh;
+}
+
+.header, .intro, .content, .features, .stories, .team, .footer {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* 메인 메뉴 */
+.header {
+  height: 96px;
+}
+
+.navigation {
+  margin-top: 70px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.menu-list {
+  position: absolute;
+  top: 5px;
+  right: -20px;
+}
+
+.menu-list li {
+  display: inline-block;
+}
+
+.menu-list a {
+  padding: 10px 20px;
+}
+
+/* intro */
+.intro {
+  margin-top: 100px;
+  height: 500px;
+}
+
+.intro .title {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+
+.intro button {
+  margin-top: 20px;
+  width: 200px;
+  background: #03a67b;
+  border-radius: 5px 5px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* content */
+
+.content-wrapper {
+  height: 900px;
+}
+
+.content-bg {
+  background: #fcfcfc;
+  height: 600px;
+}
+
+.content {
+  padding-top: 250px;
+  position: relative;
+}
+
+.content img {
+  position: absolute;
+  top: 12%;
+  right: 0;
+}
+
+.content-figure {
+  margin-top: 320px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.figure-number {
+  font-size: 4.8rem;
+  color: #03a67b;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.figure-category {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.figure-1, .figure-2, .figure-3, .figure-4 {
+  position: relative;
+}
+
+.figure-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/* features */
+
+.features-bg {
+  height: 600px;
+  background: #fcfcfc;
+}
+
+.features {
+  text-align: center;
+  height: 600px;
+  margin-top: 100px;
+}
+
+.features-heading, .team-heading {
+  padding-top: 100px;
+}
+
+.features-list, .stories-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.features-item {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+/* stories */
+
+.stories {
+  margin-top: 100px;
+  text-align: center;
+  height: 650px;
+}
+
+.stories-blog-heading {
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: #000;
+}
+
+/* team */
+
+.team-bg {
+  background: #fcfcfc;
+  height: 900px;
+}
+
+.team {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.team-content {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-list-1, .team-list-2, .team-list-3,
+.team-list-4, .team-list-5, .team-list-6 {
+  margin-top: 20px;
+  width: 367px;
+  height: 250px;
+  border-radius: 5px 5px;
+}
+
+.team-list-1, .team-list-3,
+.team-list-4, .team-list-5, .team-list-6 {
+  background: #e8e8e8 url(../images/person.png) no-repeat;
+  background-position: 50% 50%;
+}
+
+.team-list-2 {
+  background: #e8e8e8;
+}
+
+.team-name {
+  padding-top: 45px;
+  letter-spacing: 0.2em;
+  color: #000;
+  font-weight: 500;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  height: 250px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.footer-text {
+  margin-top: 20px;
+}
+
+.footer-title {
+  color: #000;
+}
+
+.footer input {
+  margin-top: 30px;
+  background: #eee;
+  border-radius: 5px 0 0 5px;
+  width: 310px;
+}
+
+.footer button {
+  margin-top: 30px;
+  width: 55px;
+  background: #03a67b;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 1.3rem;
+}

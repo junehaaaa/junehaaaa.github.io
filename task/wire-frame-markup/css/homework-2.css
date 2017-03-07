@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+
+.header, .intro, .video, .features, .gallery, .store, .footer {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+/* 나누는 선 */
+.horizon-split {
+  height: 1px;
+  background: #ababab;
+  /*margin: 100px 0;*/
+}
+
+/* 메뉴 */
+
+.navigation {
+  margin-top: 70px;
+  position: relative;
+  height: 100px;
+}
+
+.navigation h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: '700';
+}
+
+.navigation .lang-select {
+  position: absolute;
+  top: 0.5em;
+  right: 3em;
+}
+
+.navigation .navigator {
+  position: absolute;
+  top: 0.2em;
+  right: 0;
+}
+
+.navigator .navigator-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #474747;
+  margin-top: 4px;
+}
+
+/* intro */
+
+.intro {
+  text-align: center;
+  margin-top: 80px;
+  /*height: 50vh;*/
+
+}
+
+.intro-heading {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+
+.intro p, .features p {
+  color: #ababab;
+  margin-top: 15px;
+}
+
+.intro img {
+  margin-top: 50px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #03a67b;
+  border-radius: 5px 5px;
+  background: #fff;
+  color: #03a67b;
+  margin: 35px 470px 0 470px;
+}
+
+.btn a {
+  display: block;
+  font-size: 1.3rem;
+  padding: 18px 30px;
+}
+
+/* video */
+
+.video-bg {
+  background: #03a67b;
+  height: 460px;
+}
+
+.video {
+  text-align: center;
+  padding-top: 120px;
+  color: #fff;
+}
+
+.video p {
+  margin-top: 20px;
+}
+
+/* features */
+
+.features {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+
+.features-heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.features-content {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 160px;
+}
+
+.features-title {
+  margin-top: 30px;
+  color: #03a67b;
+  font-weight: 300;
+}
+
+
+.features span {
+  position: absolute;
+  top: 150px;
+  left: 39%;
+  background: url(../images/visual-1.png) no-repeat;
+  width: 252px;
+  height: 534px;
+}
+
+
+/* Gallery */
+
+.gallery {
+  margin-top: 100px;
+  height: 550px;
+}
+
+.gallery-bg {
+  background: #fcfcfc;
+  position: relative;
+}
+
+.gallery-heading {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 600;
+  padding-top: 50px;
+}
+
+.gallery .gallery-content {
+  margin: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery1, .gallery2, .gallery3, .gallery4 {
+  width: 250px;
+  height: 250px;
+  background-color: #e8e8e8;
+  border-radius: 10px 10px;
+}
+
+.gallery-bg .prev-btn, .gallery-bg .next-btn {
+  position: absolute;
+  text-indent: -80px;
+  overflow: hidden;
+  top: 46%;
+  width: 78px;
+  height: 78px;
+}
+
+.gallery-bg .prev-btn {
+  left: 100px;
+  background: url(../images/arr-circle-left.png) no-repeat;
+}
+
+.gallery-bg .next-btn {
+  right: 100px;
+  background: url(../images/arr-circle-right.png) no-repeat;
+}
+
+.store {
+  margin-top: 100px;
+  background: url(../images/map.png) no-repeat;
+  background-position: 50% 50%;
+  height: 800px;
+  position: relative;
+}
+
+.store-heading {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.text-box {
+  width: 360px;
+  height: 150px;
+  background: #fff;
+  border-radius: 5px 5px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 300px;
+  left: 180px;
+}
+
+.text-title, .text-content {
+  text-align: center;
+}
+
+.text-title {
+  color: #03a67b;
+}
+
+.text-content {
+  color: #ababab;
+}
+
+/* footer */
+
+.footer {
+  height: 180px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer-logo {
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.footer-text {
+  margin-top: 20px;
+}
+
+.footer-menu {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.footer-menu li {
+  display: inline-block;
+}
+
+.footer-menu a {
+  padding: 20px 10px;
+}
+
+.sns  {
+  background: url(../images/social.png) no-repeat;
+  display: inline-block;
+  width: 186px;
+  height: 18px;
+  text-indent: 186px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+}

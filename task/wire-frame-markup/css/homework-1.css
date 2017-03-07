@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+.header, .visual, .features, .content,
+.try-it-now, .testimonials, .footer {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 96px;
+}
+
+/* 메인 메뉴 */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.main-menu, .member li {
+  line-height: 42px;
+}
+
+.main-menu {
+  width: 530px;
+}
+
+.logo, .menu-list li {
+  float: left;
+}
+
+.logo, .menu-list, .member li {
+  display: inline-block;
+}
+
+.logo {
+  color: #03a67b;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.menu-list {
+  margin-left: 30px;
+}
+
+.main-menu a {
+  padding: 10px 10px;
+}
+
+.signup a, .login a {
+  padding: 10px 35px;
+}
+
+.signup a {
+  border: 1px solid #03a67b;
+  border-radius: 5px 5px;
+  text-align: center;
+  color: #03a67b;
+}
+
+.signup a:hover {
+  background: #03a67b;
+  color: #fff;
+}
+
+/* 비쥬얼 */
+
+.visual {
+  position: relative;
+  height: 460px;
+  margin-top: 120px;
+}
+
+.visual-content {
+  padding-top: 80px;
+}
+
+.visual-content p {
+  display: block;
+  width: 530px;
+}
+
+.input-form {
+  margin-top: 38px;
+}
+
+.visual input {
+  background: #eee;
+  width: 290px;
+}
+
+.visual button {
+  width: 200px;
+  background: #03a67b;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.3em;
+}
+
+.visual .main-image {
+  position: absolute;
+  top: -90px;
+  right: 150px;
+}
+
+/* features */
+
+.features-subject {
+  text-align: center;
+}
+
+.features-text {
+  width: 580px;
+  display: inline-block;
+  margin-top: 25px;
+  color: #ababab;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.features-list-content {
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+}
+
+.features-item {
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 0.3em;
+}
+
+.features-item-text {
+  margin-top: 20px;
+  color: #ababab;
+}
+
+/* content */
+
+.content {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.content-img {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+/* Try it now */
+
+.try-it-now {
+  text-align: center;
+}
+
+.try-it-now-text {
+  margin-top: 20px;
+  padding: 0 340px;
+}
+
+.try-it-now button {
+  margin: 30px 20px 0 20px;
+  width: 200px;
+  background: #03a67b;
+  border-radius: 5px 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 0.3em;
+}
+
+/* testimonials */
+
+.testimonials-subject {
+  text-align: center;
+}
+
+.testimonials-text {
+  width: 580px;
+  display: inline-block;
+  margin-top: 25px;
+  color: #ababab;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.testimonials-list-content {
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+}
+
+.testimonials-item {
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 0.3em;
+}
+
+
+/* footer */
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  color: #999;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-menu li, .sns li {
+  display: inline-block;
+}
+
+.footer-menu a {
+  padding: 20px 10px;
+}
+
+.slack, .twitter, .facebook, .dribble {
+  background: url(../images/social.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  text-indent: 20px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.twitter {
+  background-position: -34px 0;
+}
+
+.facebook {
+  background-position: -67px 0;
+}
+
+.dribble {
+  background-position: -101px 0;
+}
