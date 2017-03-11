@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "YouandiModernTR";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Youandi_Modern_TextRegular.eot");
+  src: url("../fonts/Youandi_Modern_TextRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Youandi_Modern_TextRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: "YouandiModernTD";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Youandi_Modern_TextBold.eot");
+  src: url("../fonts/Youandi_Modern_TextBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Youandi_Modern_TextBold.woff") format("woff"); }
+
+body {
+  margin: 0;
+  font-family: "YouandiModernTR"; }
+
+.content-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  position: relative; }
+
+.input-header {
+  padding: 50px 0 30px 0;
+  border-bottom: 3px solid #7B1FA2; }
+
+label {
+  margin: 0;
+  border: 0;
+  font-size: 1.875em;
+  display: block;
+  font-family: "YouandiModernTD"; }
+
+#input-todo {
+  border: 0;
+  border-bottom: 1px solid #E1BEE7;
+  outline: 0;
+  width: 600px;
+  height: 50px;
+  margin-top: 30px;
+  font-family: "YouandiModernTR";
+  font-size: 1.3em;
+  color: #E1BEE7; }
+
+::-webkit-input-placeholder {
+  color: inherit; }
+
+.add-todo__button {
+  border: 0;
+  outline: 0;
+  width: 100px;
+  height: 50px;
+  background: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 35px;
+  right: -30px;
+  font-size: 2.5em;
+  cursor: pointer; }
+
+.todolist {
+  padding: 0;
+  list-style-type: none; }
+
+.todolist__item {
+  border-bottom: 1px solid #E1BEE7;
+  height: 50px;
+  margin-top: 30px;
+  font-family: "YouandiModernTR";
+  font-size: 1.3em;
+  color: #4A148C;
+  position: relative; }
+
+.input-text {
+  padding-left: 45px;
+  position: absolute;
+  top: 1px;
+  z-index: -1; }
+
+.todolist__item > label {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  text-indent: -9999em; }
+
+#check-box {
+  -webkit-appearance: none;
+  outline: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+  border: 1px solid #979797;
+  position: absolute;
+  top: -5px; }
+  #check-box:hover {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background: #7B1FA2;
+    cursor: pointer; }
