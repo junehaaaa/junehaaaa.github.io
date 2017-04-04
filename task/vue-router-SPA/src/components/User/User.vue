@@ -10,7 +10,7 @@
   export default {
     methods: {
       gotoHomeComponent() {
-        this.$router.push({path: '/'});
+        this.$router.push({ name: 'home' });
       }
     }
   }
