@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <h1>SPA</h1>
-    <app-nav></app-nav>
-    <router-view></router-view>
+    <router-view name="gnb"></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue';
+
 export default {
   name: 'app',
-  components: {
-    appNav: Navigation
-  },
   data () {
     return {
     }
@@ -47,4 +46,19 @@ a
   text-decoration: none
   font-weight: 800
 
+.fade-enter-active
+  animation: fade-in 0.8s
+.fade-leave-active
+  animation: fade-out 0.8s
+
+@keyframes fade-in
+  from
+
+  to
+    opacity: 1
+@keyframes fade-out
+  from
+
+  to
+    opacity: 0
 </style>
