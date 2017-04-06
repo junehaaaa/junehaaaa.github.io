@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    border: 2px solid #2b4d66;
+    border-radius: 50%;
+  }
+  </style>
+
+</head>
+<body>
+  <div class="loader" role="group" aria-label="로딩 중....">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js"></script>
+  
+<script>
+
+  var tlDot = new TimelineLite();
+  var dots = document.querySelectorAll('.dot');
+  tlDot.staggerFrom(dots, 0.5, {
+        cycle:{
+          x: [100],
+          // autoAlpha: 0,
+          scale: [5],
+          // rotation: [30, -30],
+        },
+        autoAlpha: 0,
+        ease: Power3.easeOut
+      }, 0.1); 
+
+</script>
+</body>
+</html>
