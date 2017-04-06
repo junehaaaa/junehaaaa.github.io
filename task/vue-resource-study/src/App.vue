@@ -8,6 +8,7 @@
       <button type="button" @click="submitData">Submit</button>
     </div>
     <div class="get-http">
+      <input type="text" v-model="uri">      
       <button type="button" @click="fetchData">Fetch</button>
     </div>
     <ul class="fetched-data">
@@ -23,25 +24,50 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       user_input: {
         done: false,
         task: ''
       },
-      datalist: []
+      datalist: [],
+      resource: {},
+      uri: 'todoList'
     }
+  },
+  created() {
+    // Resource 객체에 새롭게 정의한 사용자 정의 메서드 추가
+    const customActions = {
+      saveAlt: { url: 'alternateTodoList.json', method: 'POST' },
+      fetch: { method: 'GET' }
+    };
+    this.resource = this.$resource('{uri}.json', {}, customActions);
   },
   methods: {
     submitData() {
       // VueResource === $http
-      this.$http.post('https://vue-http-1b8e7.firebaseio.com/todoList.json', this.user_input)
-                .then( response => console.log(response) )        
+      // this.$http.post('', this.user_input)
+      //           .then( response => console.log(response) )  
+
+      // Vue Resource Object 사용
+      // this.resource.save({}, this.user_input)
+      //              .then( response => console.log(response) )
+      this.resource.saveAlt({}, this.user_input)
+                  //  .then( response => console.log(response) )
     },
     fetchData() {
-      this.$http.get('https://vue-http-1b8e7.firebaseio.com/todoList.json')
-                .then( response => { return response.json(); } )
-                .then( data => { this.datalist = Object.values(data); } )
-                .catch( error => console.error(error.message) );
+      // this.$http.get('')
+      //           .then( response => { return response.json(); } )
+      //           .then( data => { this.datalist = Object.values(data); } )
+      //           .catch( error => console.error(error.message) );
+      // this.resource.get({})
+      //              .then( response => {
+      //                return response.json();
+      //              })
+      //              .then(data => {
+      //                this.datalist = Object.values(data);
+      //              });
+        this.resource.fetch({uri: this.uri})
+                     .then(res => res.json())
+                     .then(data => this.datalist = Object.values(data));
     }
   }
 }
