@@ -7,12 +7,16 @@ const state = {
   count: 0
 }
 
+const getters = {
+  evenOrOdd: stats => state.count % 2 === 0 ? 'even' : 'odd'
+}
+
 const mutations = {
   increment: state => state.count++,
   decrement: state => state.count--
 }
 
-const methods = {
+const actions = {
   increment: ({ commit }) => commit('increment'),
   decrement: ({ commit }) => commit('decrement')
 }
@@ -20,5 +24,6 @@ const methods = {
 export default new Vuex.Store({
   state,
   mutations,
-  methods
+  actions,
+  getters
 })
