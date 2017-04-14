@@ -22,8 +22,10 @@
 * https://junehaaaa.github.io/task/todo-list/view/index.html
 
 ### Vue JS Framework
-* vue-resource, router를 활용한 SPA, trasition 스터디.
+* Vue.resource, router를 활용한 SPA, trasition 스터디.
+* VueX를 이용한 상태관리자 스터디.
+
 
 ### Green Socks
 * 애니메이션을 손쉽고 빠르게 구현해주는 GSAP 공부.
-* https://junehaaaa.github.io/task/Poster__wall-e/wall-e.html
+* https://junehaaaa.github.io/task/GSAP-study/Poster__wall-e/wall-e.html
