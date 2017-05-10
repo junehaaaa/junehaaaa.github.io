@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .player {
+      width: 490px;
+      height: 100vh;
+      background-color: white;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+      position: fixed;
+      z-index: 10;
+      /*right: -490px;*/
+      top: 0;
+    }
+
+    .dim {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(66, 66, 66, 0.5);
+      position: fixed;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .player__info {
+      display: flex;
+    }
+
+    .player__cover {
+      width: 150px;
+      height: 150px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="player">
+    <div class="player__info">
+      <img class="player__cover" src="./img/newlist-test-img-1.png" alt="">
+      <div>
+        <h3 class="player__title">Polyamour</h3>
+        <p class="player__artist">REFLEX</p>
+      </div>
+    </div>
+    <div class="player__controller">
+      <div class="buttons">
+        <button type="button" class="player__btn--play"></button>
+        <button type="button" class="player__btn--pre"></button>
+        <button type="button" class="player__btn--next"></button>
+      </div>
+      <div class="player__statebar"></div>
+    </div>
+    <div class="player__list">
+      <ul class="list__item">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <div class="dim"></div>
+  <button type="button" class="btn">SHOW BOX</button>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js">
+  </script>
+  
+  <script>
+      var btn = document.querySelector('.btn');
+      var dim = document.querySelector('.dim');
+      // 클릭 이벤트 발생 -> 해당 함수 실행
+      btn.onclick = showBox;
+      dim.onclick = noShowBox;
+      // 'SHOWBOX'버튼을 클릭 했을 때
+      function showBox() {
+          TweenMax.to('.player', 0.8, {
+              right: 0,
+              //오른쪽 좌표값
+              autoAlpha: 1,
+              // autoAlpha: 1 => opacity: 1; visibility: visible;
+              ease: Power4.easeOut
+          });
+          TweenMax.to('.dim', 0.8, {
+              autoAlpha: 1,
+              delay: 0.4
+          });
+      };
+      // dim을 클릭 했을 때
+      function noShowBox() {
+          TweenMax.to('.player', 0.8, {
+              right: -800,
+              autoAlpha: 0
+              // autoAlpha: 0 => opacity: 0; visibility: hidden;
+          });
+          TweenMax.to('.dim', 0.8, {
+              autoAlpha: 0
+          });
+      }
+  </script>
+
+</body>
+</html>
